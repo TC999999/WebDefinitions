@@ -1,0 +1,32 @@
+What is HTTP?
+    HTTP is a protocol that allows your browser to retrieve webpages from servers
+
+What is a URL?
+    A URL is like a phone number for a webpage: by inputting it into your browser's search engine, you will be able to call and access that webpage from your browser
+
+What is DNS?
+    DNS is like a phone book for the internet, it takes the hostname of a webpage, and translates it into an IP address
+
+What is a query string?
+    This is used to search for additional information or change the page
+
+What are two HTTP verbs and how are they different?
+    GET and POST, GET requests without changing server data, POST changes server data
+
+What is an HTTP request?
+    Your browser requests the webpage from the server using the URL inputted into the browser
+
+What is an HTTP response?
+    The server sends the webpage to your browser, along with any files that it is linked to
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+    Headers are additional information about the request and response that are normally separate from the request and reponse body, such content type, the date the server/browser thinks it is, cookies, and language
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+    somesite.com is converted to an IP address, the browser connects that IP address to the correct server port using the HTTP protocol, the browser requests the page.html file in the some folder in the server of the IP address that was requested
+
+Using curl, make a GET request to the icanhazdadjoke.com API to find all jokes involving the word “pirate”  
+    $ curl -H "Accept: application/json" "https://icanhazdadjoke.com/search?term=pirate"
+
+Use dig to find what the IP address is for icanhazdadjoke.com
+    $ dig icanhazdadjoke.com
